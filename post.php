@@ -18,6 +18,7 @@
         <tr><td><textarea name ="comment" row="50" cols="100"></textarea></td></tr>
         <tr><td align="center" ><input type="submit" value="ส่งข้อความ"></td></tr>
     </table>   
+    <br>
     <div align="center"><a href="index.html">กลับไปหน้าหลัก</a></div>
 </body>
 </html>
