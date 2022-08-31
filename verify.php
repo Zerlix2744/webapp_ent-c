@@ -7,7 +7,6 @@
     <title>Verify</title>
 </head>
 <body>
-    <form action="verify.php" method="post"></form>
     <h1 align="center">Zerlix Webboard</h1><hr>
     <br>
     <div align="center">
@@ -15,6 +14,5 @@
         Login = <?php echo $_POST["login"];?><br>
         Password = <?php echo $_POST["password"];?>
     </div>
-    </form>
 </body>
 </html>
