@@ -10,9 +10,17 @@
     <h1 align="center">Zerlix Webboard</h1><hr>
     <br>
     <div align="center">
-        เข้าสู่ระบบด้วย<br>
-        Login = <?php echo $_POST["login"];?><br>
-        Password = <?php echo $_POST["password"];?>
-    </div>
+        <?php
+            $L=$_POST["login"];
+            $P=$_POST["password"];
+            if($L=="admin" && $P=="ad1234")
+            echo "ยินดีต้องรับคุณ ADMIN";
+            elseif($L=="member" && $P=="mem1234")
+            echo "ยินดีต้อนรับคุณ MEMBER";
+            else
+            echo "ชื่อหรือรหัสผ่านไม่ถูกต้อง";
+        ?>
+    </div><br>
+    <div align="center"><a href="index.php">กลับไปหน้าหลัก</a></div>
 </body>
 </html>

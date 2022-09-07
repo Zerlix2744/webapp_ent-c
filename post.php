@@ -12,6 +12,15 @@
     <div align="center">
         ต้องการดูกระทู้หมายเลข <?php echo $_GET["id"];?>
     </div>
+    <div  align="center">
+    <?php
+        $N=$_GET['id'];
+        if($N % 2 == 0)
+        echo "เป็นกระทู้หมายเลยคู่";
+        else
+        echo "เป็นกระทู้หมายเลขคี่"
+    ?>
+    </div>
     <br>
     <table style="border: 2px solid black;width:40%" align="center">
         <tr><td style="background-color:#6cd2fe ;"align="center">เเสดงความคิดเห็น</td></tr>
@@ -19,6 +28,6 @@
         <tr><td align="center" ><input type="submit" value="ส่งข้อความ"></td></tr>
     </table>   
     <br>
-    <div align="center"><a href="index.html">กลับไปหน้าหลัก</a></div>
+    <div align="center"><a href="index.php">กลับไปหน้าหลัก</a></div>
 </body>
 </html>
