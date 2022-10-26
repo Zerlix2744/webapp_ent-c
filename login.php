@@ -43,7 +43,7 @@
                                 <label>Password</label>
                                 <input type="password" name="password" class="form-control">
                             </div>
-                            <center><button type="submit" class="btn btn-secondary btn-sn">Login</button></center>
+                            <center><button type="submit" class="btn btn-secondary btn-sm">Login</button></center>
                         </form>
                     </div>
                 </div>

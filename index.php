@@ -81,7 +81,7 @@
                 for($i=1;$i<=10;$i++){
                 echo "<tr><td><a href=post.php?id=$i style=text-decoration:none>กระทู้ที่ $i</td>";
                 if($_SESSION['role']=='a'){
-                echo "<td><a href=delete.php?id=$i class='btn btn-danger btn-sn'>
+                echo "<td><a href=delete.php?id=$i class='btn btn-danger btn-sm'>
                 <i class='bi bi-trash'></i></a></td>";
                 }
                 echo "</tr>";
