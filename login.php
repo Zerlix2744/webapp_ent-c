@@ -20,15 +20,36 @@
 <body>
     <div class="container">
         <h1 style="text-align:center">Zerlix Webboard</h1><hr>
+        <?php include "nav.php"; ?>
         <br>
-        <form action="verify.php" method="post">
-        <table style="border: 2px solid black;width:40%" align="center">
-        <tr><td style="background-color:#6cd2fe ;" colspan="2" align="center">เข้าสู่ระบบ</td></tr>
-        <tr><td>Login</td><td><input type="text" name="login" size="50"></td></tr>
-        <tr><td>Password</td><td><input type="password"name="password" size="50"></td></tr>
-        <tr><td colspan="2" align="center" ><input type="submit" value="Login"></td></tr>
-        </form>
-        </table><br>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <?php
+                if(isset($_SESSION['error'])){
+                    echo "<div class='alert alert-danger'>ชื่อบัญชีหรือรหัสผ่านไม่ถูกต้อง</div>";
+                }
+                ?>
+                <div class="card text-dark bg-light">
+                    <div class="card-header">เข้าสู่ระบบ</div>
+                    <div class="card-body">
+                        <form action="verify.php" method="post">
+                            <div class="form-group mb-2">
+                                <label>Login</label>
+                                <input type="text" name="login" class="form-control">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label>Password</label>
+                                <input type="password" name="password" class="form-control">
+                            </div>
+                            <center><button type="submit" class="btn btn-secondary btn-sn">Login</button></center>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <br>  
         <div align="center">ถ้ายังไม่ได้เป็นสมาชิก <a href="register.php">กรุณาสมัครสมาชิก</a></div>
     </div>
 </body>
